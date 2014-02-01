@@ -9,7 +9,7 @@ library("glmnet")
 library("boot")
 
 
-data.path <- "./data/aiua.csv"
+data.path <- "../data/aiua.csv"
 
 # split data up into wfu (with follow-up) and wofu (without-followup)
 # use random 75% of entries of each 
@@ -48,7 +48,6 @@ ggplot(body.lengths,aes(x=log(freq))) +
 geom_histogram(binwidth=.1)
 ggsave("./figures/h_trim_body_nchar.pdf")
 
-browser()
 documents <- data.frame(Text = ua.dt$body)
 
 row.names(documents) <- 1:nrow(documents)
