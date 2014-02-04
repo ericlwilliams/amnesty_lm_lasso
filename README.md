@@ -9,4 +9,5 @@
 - Given a category e.g. legal concern
 	- Builds Corpus + DocumentTermMatrix for all UAs of given category
 	- Runs logistic regression with 10-fold cross-validation to choose lambda (alpha=1 -> lasso) 
-	- test
+	- Performance: mis-classification
+- Output into figures/{category_name}
