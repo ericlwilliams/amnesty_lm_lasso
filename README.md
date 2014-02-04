@@ -1,4 +1,4 @@
-# Amnesty International, Urgent Action (aiua) analyses
+# Amnesty International, Urgent Action (aiua) analysis
 ## Testing linear/logistic regression models with regularization (lasso) for predicting Urgent Action *follow-up*
 ---
 ### aiua_categories.R: 
