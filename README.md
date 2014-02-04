@@ -1,4 +1,4 @@
-# Amnesty International, Urgent Action (aiua) analysis
+## Amnesty International, Urgent Action (aiua) analysis
 ## Testing linear/logistic regression models with regularization (lasso) for predicting Urgent Action *follow-up*
 ---
 ### aiua_categories.R: 
@@ -9,5 +9,5 @@
 - Given a category e.g. legal concern
 	- Builds Corpus + DocumentTermMatrix for all UAs of given category
 	- Runs logistic regression with 10-fold cross-validation to choose lambda (alpha=1 -> lasso) 
-	- Performance: mis-classification
+	- Performance: mis-classification of whether an initial UA was followed up (<- requested outcome by AI)
 - Output into figures/{category_name}

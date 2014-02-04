@@ -148,7 +148,7 @@ y <- ua.dt$wfu
 
 # Does k-fold cross-validation for glmnet, produces a plot, and returns a value for lambda
 
-cvfit <- cv.glmnet(x,y,nfolds=nrow(x),family="binomial",type.measure="class")
+cvfit <- cv.glmnet(x,y,nfolds=10,family="binomial",type.measure="class")
 
 pdf(paste(save_path,"aiua_follow_up_misclass_v_lambda.pdf",sep="/"))
 plot(cvfit)
