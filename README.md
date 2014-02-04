@@ -7,6 +7,6 @@
 
 ### aiua_logreg_fu_lasso.R
 - Given a category e.g. legal concern
--- Builds Corpus + DocumentTermMatrix for all UAs of given category
--- Runs logistic regression with 10-fold cross-validation to choose lambda (alpha=1 -> lasso) 
---- test
+	- Builds Corpus + DocumentTermMatrix for all UAs of given category
+	- Runs logistic regression with 10-fold cross-validation to choose lambda (alpha=1 -> lasso) 
+	- test
