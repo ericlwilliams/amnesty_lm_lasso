@@ -62,3 +62,4 @@ pal <- pal[-(1:2)]
 png("./figures/category_wordcloud.png", width=1280,height=800)
 wordcloud(d$word,d$freq, scale=c(8,.3),min.freq=2,max.words=100, random.order=T, rot.per=.15, colors=pal, vfont=c("sans serif","plain"))
 dev.off()
+ 
