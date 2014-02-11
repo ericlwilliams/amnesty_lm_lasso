@@ -10,4 +10,5 @@
 	- Builds Corpus + DocumentTermMatrix for all UAs of given category
 	- Runs logistic regression with 10-fold cross-validation to choose lambda (alpha=1 -> lasso) 
 	- Performance: mis-classification of whether an initial UA was followed up (<- requested outcome by AI)
+    - e.g. Category 'Freedom of Expression': miss-classification : 0.21 on test data (all ~ 0.12 w/ stemming)
 - Output into figures/{category_name}

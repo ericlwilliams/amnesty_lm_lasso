@@ -11,6 +11,7 @@ data.path <- "./data/aiua.csv"
 
 # Sparsity 
 sparsity = 0.99
+do.stemming = FALSE  #stemming helps with all
 
 # Category dictionary
 # [1] "cat_abduction"               "cat_arbitrary_arrest"
@@ -94,6 +95,7 @@ corpus <- Corpus(DataframeSource(documents))
 corpus <- tm_map(corpus, tolower)
 corpus <- tm_map(corpus, stripWhitespace)
 corpus <- tm_map(corpus, removeNumbers)
+if(do.stemming) { corpus <- tm_map(corpus, stemDocument, language="english")}
 corpus <- tm_map(corpus, removeWords, c(stopwords('english'),"amnesty","international","information","human","rights","uan@aiusa.org","(m)","amnestyusa.org/urgent/","()","(),"," ()", "() "," (),","(), "))
 
 aiua.dtm <- DocumentTermMatrix(corpus)
